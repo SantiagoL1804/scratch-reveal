@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/2c8015be2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Ubuntu:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video
+        id="video"
+        loop
+        muted
+        autoplay
+        src="src/Grabación 2023-11-16 104913.mp4"
+      ></video>
+      <div class="furniture ceiling-lamp"><i class="fa-solid fa-plus"></i></div>
+      <div class="furniture picture"><i class="fa-solid fa-plus"></i></div>
+      <div class="furniture lounger"><i class="fa-solid fa-plus"></i></div>
+      <div class="furniture bed"><i class="fa-solid fa-plus"></i></div>
+      <div class="furniture chair"><i class="fa-solid fa-plus"></i></div>
+
+      <div class="furniture-display-background"></div>
+
+      <div class="detail-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="image" src="src/pantalla.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="image" src="src/pantalla.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="image" src="src/pantalla.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="image" src="src/pantalla.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="upper-section">
+          <div class="text-section">
+            <h3 class="detail-title">Title</h3>
+            <h4 class="detail-subtitle">Subtitle</h4>
+            <h5 class="detail-text">Text</h5>
+          </div>
+          <i class="fa-solid fa-xmark close-btn"></i>
+        </div>
+        <button>COMPRÁ AHORA</button>
+      </div>
+    </div>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
